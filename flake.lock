@@ -2,6 +2,21 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
+        "lastModified": 1752050034,
+        "narHash": "sha256-nP3HFGP9NWSHPoLn7PoewmTwrq9AhgZJfzIRGJItI0A=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2e55ed5f59bb4846f64823959e1de2bb8f386b0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1751949589,
         "narHash": "sha256-mgFxAPLWw0Kq+C8P3dRrZrOYEQXOtKuYVlo9xvPntt8=",
         "owner": "NixOS",
@@ -16,7 +31,26 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "self-main-branch": "self-main-branch"
+      }
+    },
+    "self-main-branch": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1752049744,
+        "narHash": "sha256-Qae3B7UYnKOA1fAnwqm0XbHIMENG78ooZb+HZEe2QCI=",
+        "owner": "koraa",
+        "repo": "test-selfreferential-flake",
+        "rev": "8766f208f98b90f06def52f33849fdc3a7e7f672",
+        "type": "github"
+      },
+      "original": {
+        "owner": "koraa",
+        "repo": "test-selfreferential-flake",
+        "type": "github"
       }
     }
   },
